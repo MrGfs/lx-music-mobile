@@ -9,7 +9,7 @@ on:
 jobs:
   Android:
     name: Android
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Check out git repository
         uses: actions/checkout@v4
