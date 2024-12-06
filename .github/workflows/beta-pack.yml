@@ -25,7 +25,7 @@ jobs:
         
           # ./gradlew assembleRelease -PMYAPP_UPLOAD_STORE_FILE='${{ secrets.KEYSTORE_STORE_FILE }}' -PMYAPP_UPLOAD_KEY_ALIAS='${{ secrets.KEYSTORE_KEY_ALIAS }}' -PMYAPP_UPLOAD_STORE_PASSWORD='${{ secrets.KEYSTORE_PASSWORD }}' -PMYAPP_UPLOAD_KEY_PASSWORD='${{ secrets.KEYSTORE_KEY_PASSWORD }}'
           ./gradlew assembleDebug
-          rm -f app/${{ secrets.KEYSTORE_STORE_FILE }}
+          # rm -f app/${{ secrets.KEYSTORE_STORE_FILE }}
 
       # Push tag to GitHub if package.json version's tag is not tagged
       - name: Get package version
