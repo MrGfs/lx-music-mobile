@@ -12,6 +12,10 @@ buildscript {
         RNNKotlinVersion = kotlinVersion
     }
     repositories {
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://repo.huaweicloud.com/repository/maven/' }
+        maven { url 'https://mirrors.tuna.tsinghua.edu.cn/repository/maven/' }
+        maven { url 'https://mirrors.cloud.tencent.com/nexus/repository/maven-public/' }
         google()
         mavenCentral()
     }
